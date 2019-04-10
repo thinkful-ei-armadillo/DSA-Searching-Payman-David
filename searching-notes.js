@@ -40,9 +40,9 @@ function deweySearch(array, dew, title, start, end) {
     }
     return -1;
   } else if (item < dew) {
-    return this.binarySearch(array, dew, index + 1, end);
+    return this.deweySearch(array, dew, index + 1, end);
   } else if (item > dew) {
-    return this.binarySearch(array, dew, start, index - 1);
+    return this.deweySearch(array, dew, start, index - 1);
   }
 }
 
